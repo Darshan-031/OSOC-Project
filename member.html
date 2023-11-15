@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSOC.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image" href="images/osoc_white.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .member-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .member-container figure {
+	        position: relative;
+            border-radius: 4px;
+            filter: blur(0.2px);
+        }
+        .member-container figure:active{
+            scale: 0.98;
+        }
+        .member-container figure:hover{
+            scale: 1.03;
+            filter: blur(0px);
+        }
+        .member-container figure img {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .member-container figure:hover img {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+        }
+        .member-container div {
+            position: relative;
+            float: left;
+            width: 25vw;
+            height: 25vw;
+            margin: 0 0 0 25px;
+            padding: 0;
+            border: 3px solid rgb(30, 29, 29);
+            border-top: none;
+            border-left: none;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgb(15, 14, 14);
+            margin-bottom: 100px;
+        }
+        .member-container div:first-child {
+            margin-left: 0;
+        }
+        .member-container div span {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: -1;
+            display: block;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: center;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: 0;
+        }
+        figure {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+            overflow: hidden;
+        }
+        figure img{
+            width: 25vw;
+            height: 25vw;
+        }
+
+        figure:hover+span {
+            bottom: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            opacity: 1;
+            scale: 1.5;
+            z-index: 5;
+        }
+        figure:hover+img{
+            filter: blur(0px);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://osoc.nitt.edu/index.php" target="_blank"><img src="images/osoc_white.png" alt="Tech Club Logo" width="100" height="100" id="logo"></a>
+        <nav>
+            <a href="main2.html" class="menu"><span>home</span></a>
+            <a href="member.html" class="menu"><span>Team</span></a>
+            <a href="events.html" class="menu"><span>Events</span></a>
+            <a href="contact.html" class="menu"><span>Contact</span></a>
+        </nav>
+        <a href="main2.html"><h1>O S O C</h1></a>
+    </header>
+
+    <section style="margin-bottom: 100px;">
+        <u><h2>Members</h2></u>
+
+        <!-- member Container -->
+        <div class="member-container">
+            <div>
+                <figure><img src="members/madhav.webp" /></figure>
+                <span>MANVENDRA</span>
+            </div>
+            <div>
+                <figure><img src="members/harsh.webp" /></figure>
+                <span>HARSH</span>
+            </div><div>
+                <figure><img src="members/rishi.webp" /></figure>
+                <span>RISHIKESH</span>
+            </div><div>
+                <figure><img src="members/tiya.webp" /></figure>
+                <span>TIYA ROY</span>
+            </div>
+            <div>
+                <figure><img src="members/nandini.webp" /></figure>
+                <span>NANDINI</span>
+            </div>
+            <div>
+                <figure><img src="members/deepak.webp" /></figure>
+                <span>DEEPAK</span>
+            </div><div>
+                <figure><img src="members/neeraj.webp" /></figure>
+                <span>NEERAJ</span>
+            </div><div>
+                <figure><img src="members/sachin.webp" /></figure>
+                <span>SACHIN</span>
+            </div>
+            <div>
+                <figure><img src="members/rito.webp" /></figure>
+                <span>RITABRATA</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="media-icons">
+            <a href="https://www.facebook.com/osoc.nitt?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/osoc-nitt-82a395221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/osoc_nitt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
